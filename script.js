@@ -12,6 +12,10 @@ const resetBtn = document.getElementById("resetBtn");
 const addingField = document.querySelector(".adding");
 const substractField = document.querySelector(".substract");
 
+// error message area
+const errorAdding = document.getElementById("errorAdding");
+const errorSubs = document.getElementById("errorSubs");
+
 addBtn.addEventListener("click", (event) => {
     addingField.classList.toggle("hidden");
 })
@@ -57,9 +61,18 @@ function playWithScore(){
 const wholeScore = playWithScore();
 
 submitAdd.addEventListener("click", (event) => {
-    event.preventDefault();    
+    event.preventDefault();   
 
     const addingPointsInput = document.getElementById("addingPoints");
+
+    if (addingPointsInput.value === ""){
+        errorAdding.classList.remove("hidden");
+        errorAdding.textContent = "write a number !"
+        return;
+    } else {
+        errorAdding.classList.add("hidden");
+    }
+
     let value = Number(addingPointsInput.value);
 
     if ( !isNaN(value)){
@@ -74,6 +87,15 @@ submitSub.addEventListener("click", (event) => {
     event.preventDefault();
 
     const substractPointsInput = document.getElementById("substractPoints");
+
+    if (substractPointsInput.value === ""){
+        errorSubs.classList.remove("hidden");
+        errorSubs.textContent = "write a number !"
+        return;
+    } else {
+        errorSubs.classList.add("hidden");
+    }
+
     let value = Number(substractPointsInput.value);
 
     if (!isNaN(value)) {
