@@ -3,6 +3,30 @@ body{
     background-color: beige;
 }
 
+.welcoming{
+    width: 100%;
+    max-width: 1000px;
+    background-color: rgb(225, 225, 193);
+    padding: 50px;
+    margin: 3rem auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.startBtn{
+    padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: rgb(111, 111, 68);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 200px;
+}
+
 .GameArea{
     width: 100%;
     max-width: 1000px;

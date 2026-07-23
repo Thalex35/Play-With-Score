@@ -1,6 +1,9 @@
 // retrieving area
 const scoreArea = document.getElementById("scoreArea");
+const GameArea = document.querySelector(".GameArea");
+const welcomingPart = document.querySelector(".welcoming");
 // button 
+const startBtn = document.querySelector(".startBtn")
 const addBtn = document.querySelector(".addBtn");
 const subBtn = document.querySelector(".subBtn");
 const submitAdd = document.querySelector(".submitAdd");
@@ -22,6 +25,11 @@ addBtn.addEventListener("click", (event) => {
 
 subBtn.addEventListener("click", (event) => {
     substractField.classList.toggle("hidden");
+})
+
+startBtn.addEventListener("click", (event) =>{
+    welcomingPart.classList.add("hidden");
+    GameArea.classList.remove("hidden");
 })
 
 function playWithScore(){
