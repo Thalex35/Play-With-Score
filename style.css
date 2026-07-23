@@ -28,11 +28,9 @@ body{
 }
 
 .loading{
-    margin: 3rem auto;
-    display: flex;
-    align-items: center;
     font-weight: bold;
     font-size: 30px;
+    margin: 20px;
 }
 
 .GameArea{
