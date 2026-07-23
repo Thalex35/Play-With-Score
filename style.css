@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    background-color: beige;
+}
+
+.GameArea{
+    width: 100%;
+    max-width: 1000px;
+    background-color: rgb(225, 225, 193);
+    padding: 50px;
+    margin: 3rem auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.main{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.btn_input{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.toAdd, .toSub{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.adding, .substract{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+label{
+    font-size: 18px;
+}
+
+.hidden{
+    display: none;
+}
+
+#scoreArea{
+    border: 1px solid gray;
+    width: 50px;
+    padding: 20px;
+    background-color: beige;
+    border-radius: 100px;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.addBtn, .subBtn{
+    padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: rgb(111, 111, 68);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 200px;
+}
+
+.submitAdd, .submitSub{
+    padding: 10px 20px;
+  border: 1px solid rgb(111, 111, 54);
+  background-color: rgb(236, 236, 200);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 150px;
+}
+
+input{
+    padding: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

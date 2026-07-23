@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js" defer></script>
+    <title>Play with the score</title>
+</head>
+<body>
+    <div class="GameArea">
+      <h1>This is a little game</h1>
+      <p>You'll play with the score</p>
+      <div class="main">
+            <span id="scoreArea">0</span>
+            <div class="btn_input">
+                <div class="toAdd">
+                    <button class="addBtn" type="button">Add Score</button>
+                    <div class="adding hidden">
+                        <label for="addingPoints">how many do you want to add ? </label>
+                        <div>
+                            <input id="addingPoints" type="number" value="5" required />
+                            <button type="button" class="submitAdd">ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="toSub">
+                    <button class="subBtn" type="button">Substract Score</button>
+                    <div class="substract hidden">
+                        <label for="substractPoints">how many do you want to substract ? </label>
+                        <div>
+                            <input id="substractPoints" type="number" value="2" required />
+                            <button type="button" class="submitSub">SUBSTRACT</button>
+                        </div> 
+                    </div>
+                </div>
+            </div>        
+      </div>     
+    </div>
+</body>
+</html>
