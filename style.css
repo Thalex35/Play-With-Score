@@ -92,3 +92,14 @@ input{
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
+#resetBtn{
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background-color: rgb(235, 235, 184);
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100px;
+}
