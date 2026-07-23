@@ -2,6 +2,7 @@
 const scoreArea = document.getElementById("scoreArea");
 const GameArea = document.querySelector(".GameArea");
 const welcomingPart = document.querySelector(".welcoming");
+const loadingArea = document.querySelector(".loading");
 // button 
 const startBtn = document.querySelector(".startBtn")
 const addBtn = document.querySelector(".addBtn");
@@ -29,7 +30,11 @@ subBtn.addEventListener("click", (event) => {
 
 startBtn.addEventListener("click", (event) =>{
     welcomingPart.classList.add("hidden");
-    GameArea.classList.remove("hidden");
+    loadingArea.classList.remove("hidden");
+    setTimeout(() =>{
+        loadingArea.classList.add("hidden");
+        GameArea.classList.remove("hidden");
+    }, 2000)
 })
 
 function playWithScore(){
